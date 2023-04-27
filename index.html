@@ -12,8 +12,8 @@
 
 <body>
   <div class="container-fluid !direction !spacing">
-    <div class="row justify-content-center" style="margin-left: 20;margin-right: 20;">
-      <h1 style="text-align: center;">In the past 6 months how many times do you think the average person has donated to a Non Profit Organization (NPO)?</h1>
+    <div class="row justify-content-center">
+      <h1 style="text-align: center;padding-top: 20px;">In the past 6 months how many times do you think the average person has donated to a Non Profit Organization (NPO)?</h1>
       <div class="input-group mb-3" style="text-align: center; width: 300px;"> 
         <input id="question-1" type="number" class="form-control" placeholder="Please Enter a Number" aria-label="Please Enter a Number" aria-describedby="basic-addon2">
         <div class="input-group-append">
@@ -24,14 +24,25 @@
       <script src="answer-script.js"></script> 
     </div>
   </div>
-  <div class="form-row justify-content-center" style="text-align: center;margin-top: 30px;">
+  <div class="form-row justify-content-center" style="text-align: center;padding-top: 30px;">
     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
     </svg>
   </div>
-  <div style="text-align: center;margin-top: 40px;width: 100%; height: 200px;">
-    <canvas id="myChart" style="text-align: center;margin: auto;width: 700px"></canvas>
+  <div class="container" style="display: flex; align-items: center; justify-content: center;padding-top: 40px;">
+    <div>
+      <canvas id="myChart" style="text-align: center;margin-right: 30px; width: 700px"></canvas>
+    </div>
+    <div class="text">
+      <span>This is a text blurb that is going to explain the bar chart on the left</span>
+    </div>
   </div>
   <script src="common-num-donations.js"></script>
+  <div class="section_block" style="margin-top: 60px;height: 200px;width: 100%; background-color: #fff6ef;">
+    <div class="text" style="padding-top: 40px;">
+      <h3 style="text-align:left;margin-left: 100px;">Who Was Surveyed?</h3>
+    </div>
+    <h6 style="text-align:left;margin-left: 100px;">This is some text about who was surveyed.</h6>
+  </div>
 </body>
 </html>
