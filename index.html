@@ -1,1 +1,32 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reignite Info Viz Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid !direction !spacing" style="background-color: #FFE8D7;">
+    <div class="row justify-content-center" style="margin-left: 20;margin-right: 20;">
+      <h1 style="text-align: center;">In the past 6 months how many times do you think the average person has donated to a Non Profit Organization (NPO)?</h1>
+      <div class="input-group mb-3" style="text-align: center; width: 300px;"> 
+        <input id="question-1" type="number" class="form-control" placeholder="Please Enter a Number" aria-label="Please Enter a Number" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-dark" type="button" onclick="respondToUser()">Enter</button>
+        </div>
+      </div> 
+      <p id="response" style="text-align: center;"></p>
+      <script src="/answer-script.js"></script> 
+    </div>
+  </div>
+  <div class="form-row justify-content-center" style="text-align: center;margin-top: 30px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+    </svg>
+  </div>
+</body>
+</html>
