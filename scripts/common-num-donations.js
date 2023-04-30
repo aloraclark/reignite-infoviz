@@ -74,6 +74,6 @@ const config = {
 };
 
 const chart = new Chart(
-    document.getElementById('myChart'),
+    document.getElementById('vertBarChart'),
     config
 );
