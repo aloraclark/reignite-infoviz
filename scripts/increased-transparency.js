@@ -138,7 +138,14 @@ var myChart = new Chart(ctx, {
       x: {
         stacked: true,
         type: 'linear',
-        beginAtZero: true
+        //beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Percentage'
+        },
+        beginAtZero: true,
+        stepValue: 10,
+        max: 100
       },
       y: {
         stacked: true,
@@ -157,9 +164,9 @@ var myChart = new Chart(ctx, {
         },
         title: {
             display: true,
-            text: 'Number of Times People Have Donated in the Last Six Months'
+            text: 'Things an NPO Should Do After You Donate (Ranked by Importance)'
         }
     },
-    indexAxis: 'y'
+    indexAxis: 'y',
   }
 });

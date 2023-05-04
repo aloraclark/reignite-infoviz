@@ -43,7 +43,15 @@ const config2 = {
                 text: 'Means Through Which People Find NPOs'
             }
         },
-        indexAxis: 'y'
+        indexAxis: 'y',
+        scales: {
+            x: {
+                title: {
+                  display: true,
+                  text: '# of People'
+                }
+            }
+        }
     }
 };
 

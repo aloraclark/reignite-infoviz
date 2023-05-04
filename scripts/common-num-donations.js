@@ -1,17 +1,17 @@
 let labels = [
-    '1', 
-    '2', 
-    '3', 
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '10',
-    '11',
-    '12',
-    '18',
-    '20',
+    1, 
+    2, 
+    3, 
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    18,
+    20,
     '30+'
 ];
 
@@ -49,6 +49,26 @@ let barColors = [
     'rgb(82, 98, 104)'
 ]
 
+const average_annotation = {
+    type: 'line',
+    borderColor: 'red',
+    borderWidth: 2,
+    scaleID: 'x',
+    value: 6.4,
+    title: 'average'
+};
+
+const average_label = {
+    type: 'label',
+    xValue: 6.9,
+    yValue: 13,
+    //backgroundColor: 'rgba(245,245,245)',
+    content: ['average'],
+    font: {
+      size: 9
+    }
+};
+
 const data = {
     labels: labels,
     datasets: [{
@@ -68,8 +88,28 @@ const config = {
             title: {
                 display: true,
                 text: 'Number of Times People Have Donated in the Last Six Months'
+            },
+            annotation: {
+                annotations: {
+                  average_annotation,
+                  average_label
+                }
             }
-        }
+        },
+        scales: {
+            y: {
+              title: {
+                display: true,
+                text: '# of People'
+              }
+            },
+            x: {
+                title: {
+                  display: true,
+                  text: '# of Donations'
+                }
+            }
+        }  
     }
 };
 
