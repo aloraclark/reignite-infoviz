@@ -19,14 +19,14 @@
   }
 
   @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+      0% {
+      margin-top: 0;
     }
-    40% {
-      transform: translateY(-30px);
+    50% {
+      margin-top: 40px;
     }
-    60% {
-      transform: translateY(-15px);
+    100% {
+      margin-top: 0;
     }
   }
 
@@ -60,9 +60,9 @@
     <!--Header-->
     <div class="row">
       <h1 style="text-align: center;padding-top: 20px;font-family: 'Instrument Serif';font-size: 48px;">In the past 6 months how many times do you think the average person has donated to a Non Profit Organization (NPO)?</h1>
-      <div class="row" style="margin-right: 0%; padding-right: 0%;">
-        <div class="col-5" style="width: 470px;text-align: left; padding-right: 0%;">
-          <img src="assets/individual icons/toy 1.svg">
+      <div class="row" style="margin-left: 5%; padding-right: 0%;">
+        <div class="col-5" style="width: 400px;">
+          <img src="assets/individual icons/donation box.svg" style="width: 200px;">
         </div>
         <div class="col-3" style="width: 300px;">
           <div class="row justify-content center">
@@ -83,8 +83,8 @@
             </div>
           </div>
         </div>
-        <div class="col-5" style="width: 468px; text-align: end;">
-          <img src="assets/individual icons/food 1.svg">
+        <div class="col-5" style="width: 400px;text-align: end;">
+          <img src="assets/individual icons/donation box.svg" style="width: 200px;">
         </div>
       </div> 
     </div>
@@ -95,8 +95,13 @@
       <canvas id="vertBarChart" style="text-align: center;margin-right: 30px; width: 700px"></canvas>
     </div>
     <div class="text">
-      <p style="background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
-        This is a text blurb that is going to explain the bar chart on the left
+      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">More Than Meets the Eye</h5>
+      <p style="background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather'; font-size: 14px;">
+        The average number of times people have donated in the last six months seems to be around 7. 
+        However, that’s not the full picture. 
+        Most people have only donated one time in the last six months, with the second highest number of donations being three times. 
+        That’s not even once a month! 
+        For any non-profit, large or small, this is bad news.
       </p>
     </div>
   </div>
@@ -106,7 +111,11 @@
     <div class="text" style="padding-top: 40px;">
       <h3 style="text-align:left;padding-left: 100px;font-family: 'Instrument Serif';font-size: 40px;">Who Was Surveyed?</h3>
     </div>
-    <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather';">This is some text about who was surveyed.</h6>
+    <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather';width: 900px;">
+      We surveyed 74 people, most living in the Berkeley area of California. 
+      These people are of varying demographic backgrounds, income levels, education levels, etc. 
+      Below you will find a demographic breakdown by Students, Part-time Employees, and Full-time Employees, where each icon represents 2 people.
+    </h6>
   </div>
   <div class="row" style="padding-top: 30px;height: 400px;">
     <div class="col-3">
@@ -228,37 +237,45 @@
       </div>
     </div>
   </div>
+  <!--What is Important to Donors-->
   <div class="section_block" style="margin-top: 60px;height: 200px;width: 100%; background-color: #FFE8D7;">
     <div class="text" style="padding-top: 40px;">
       <h3 style="text-align:left;padding-left: 100px;font-family: 'Instrument Serif';font-size: 40px;">What is Important to Donors?</h3>
     </div>
-    <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather';">This is some text about what things donors find important.</h6>
+    <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather';width: 900px;">
+      There are many things that donors look for when deciding what NPOs to send money and items to or to spend time helping. 
+      Below we highlight characteristics donors believe an NPO should have, how donors find NPOs to connect to, and some barriers the donors face when trying to make donations.
+    </h6>
   </div>
   <!--Radar Chart-->
   <div class="container" style="display: flex; align-items: center; justify-content: center;padding-top: 40px;">
     <div>
       <canvas id="radarChart" style="margin-right: 100px; width: 600px; height: 600px;"></canvas>
     </div>
-    <div class="text" style="width: 300px;">
-      <div style="text-align: center;width: 300px; padding-bottom: 4%;">
+    <div style="width: 600px;">
+      <div style="text-align: center;width: 500px; padding-bottom: 4%;">
         <img src="assets/individual icons/non-profit house.svg" style="width: 100px">
       </div>
-      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Title for Description of the Graph Goes Here</h5>
-      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
-        This is a text blurb that is going to explain the radar chart on the left
+      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">The Perfect NPO</h5>
+      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';font-size: 14px;">
+        When it comes to characteristics of a non-profit, many people often disagree on what is important and unimportant. 
+        However, many people believe that a NPO who shares their personal core values and goals is extremely important. 
+        Additionally people really care about the political stances and affiliations of the non-profit organization, while they 
+        could truly care less if the non-profit has celebrity endorsements or a social media presence.
       </p>
     </div>
   </div>
   <script src="scripts/how-donors-choose.js"></script>
   <!--Horizontal Bar Chart-->
   <div class="container" style="display: flex; align-items: center; justify-content: center;padding-top: 40px;">
-    <div class="text" style="width: 300px;">
-      <div style="text-align: center;width: 300px; padding-bottom: 4%;">
+    <div style="width: 600px;">
+      <div style="text-align: center;width: 400px; padding-bottom: 4%;">
         <img src="assets/individual icons/donor connections (1).svg" style="width: 100px">
       </div>
-      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Title for Description of the Graph Goes Here</h5>
-      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
-        This is a text blurb that is going to explain the radar chart on the left
+      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Meaningful Connections are Essential to Finding NPOs</h5>
+      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';font-size: 14px;">
+        Most people find NPOs based on established connections they already have such as friends and family or personal or professional affiliations. 
+        If these networks are not strong, it is much more difficult for people to find causes that they can believe in and trust. 
       </p>
     </div>
     <div>
@@ -271,13 +288,15 @@
     <div>
       <img src="assets/who donors are/word cloud.png" style="margin-right: 100px; width: 600px; height: 300px;">
     </div>
-    <div class="text" style="width: 300px;">
-      <div style="text-align: center;width: 300px; padding-bottom: 4%;">
+    <div style="width: 600px;">
+      <div style="text-align: center;width: 500px; padding-bottom: 4%;">
         <img src="assets/individual icons/donor barriers.svg" style="width: 100px">
       </div>
-      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Title for Description of the Graph Goes Here</h5>
-      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
-        This is a text blurb that is going to explain the radar chart on the left
+      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Barriers Faced by Donors</h5>
+      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather'; font-size: 14px;">
+        Many donors experience barriers to entry when trying to donate to any non-profit organization, with the two biggest barriers being money and time. 
+        Many people believe that if they can’t give large amounts of money or time, that they’re not making an impact at all. 
+        People also don’t know where to look to find NPOs that resonate with them and where to start when it comes to giving on a recurring basis.
       </p>
     </div>
   </div>
@@ -286,14 +305,16 @@
     <div class="text" style="padding-top: 40px;">
       <h3 style="text-align:left;padding-left: 100px;font-family: 'Instrument Serif';font-size: 40px;">What Does This Mean for Non Profits?</h3>
     </div>
-    <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather';">
-      This is some text about recommendations for NPOs to increase their donations. Make sure to highlight personalized experience,
-      increased transparency, and streamlined donations.
+    <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather';width: 900px;">
+      In order to take advantage of some of the things donors find important as well as alleviate some of the barriers donors have, 
+      we believe that non-profits should make strides toward creating personalized experiences for their donors, increasing their transparency 
+      with donors, and implementing different ways to streamline monetary donations. 
     </h6>
   </div>
   <!--Recommendation 1-->
   <div class="container" style="padding-top: 30px; width: 900px; align-items: center;">
     <h5 style="text-align: center; background-color: #78bbfa; border-radius: 30px; padding: 20px;color:#000000; font-family: 'Instrument Serif';font-size: 20px;">
+      <img src="assets/individual icons/1.svg">
       People want to feel connected to the NPOs they donate to and are seeking a more personalized experience.
     </h5>
   </div>
@@ -312,31 +333,43 @@
     </div>
     <script src="scripts/wealth-management.js"></script>
   </div>
-  <!--Recommendation 2-->
-  <div class="container" style="padding-top: 30px; width: 900px; align-items: center;">
-    <h5 style="text-align: center; background-color: #78bbfa; border-radius: 30px; padding: 20px; color:#000000; font-family: 'Instrument Serif';font-size: 20px;">
-      Donors want to partner with NPOs who have exhibited some level of increased transparency. 
-      They care a lot about the causes they donate to and want to ensure their money is being used properly.
-    </h5>
-  </div>
-  <!--Horizontal Stacked Bar Chart-->
-  <div class="container" style="display: flex; align-items: center; justify-content: center;">
-    <div>
-      <canvas id="horizStackedBarChart" style="width: 800px; height: 450px"></canvas>
-    </div>
-    <script src="scripts/increased-transparency.js"></script>
-    <div class="text" style="width: 300px; padding-left: 2%;">
-      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Title for Description of the Graph Goes Here</h5>
-      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
-        This is a text blurb that is going to explain the stacked bar chart on the left
+  <div class="container" style="display: flex; align-items: center; justify-content: center; padding-top: 2%; padding-bottom: 70px;">
+    <div class="text" style="width: 600px; padding-left: 2%;">
+      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Donations are a Charitable Transaction</h5>
+      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather'; font-size: 14px;">
+        When giving their money to charity donors want to rest assured that it is not lining the pockets of executives and is being used for its intended purpose. 
+        While not as important, many donors expect the specific impact of their donation to be communicated as well as maintaining ongoing communication with the NPO so that donors can trust that the NPO is working towards their overall mission.
       </p>
     </div>
   </div>
-  <!--Recommendation 3-->
-  <div class="container" style="padding-top: 30px; width: 900px; align-items: center;">
+  <hr style="border-top: 8px solid #bbb; border-radius: 5px;width: 1000px; margin: auto;">
+  <!--Recommendation 2-->
+  <div class="container" style="padding-top: 100px; width: 900px;">
     <h5 style="text-align: center; background-color: #78bbfa; border-radius: 30px; padding: 20px; color:#000000; font-family: 'Instrument Serif';font-size: 20px;">
-      In the age of the electronic wallet, donors are looking for more streamlined ways to donate to the causes
-      they care about.
+      <img src="assets/individual icons/2.svg">
+      Donors want to partner with NPOs who practice increased transparency.
+    </h5>
+  </div>
+  <!--Horizontal Stacked Bar Chart-->
+  <div class="container" style="display: flex; align-items: center; justify-content: center; padding-bottom: 70px;">
+    <div>
+      <canvas id="horizStackedBarChart" style="width: 725px; height: 450px"></canvas>
+    </div>
+    <script src="scripts/increased-transparency.js"></script>
+    <div class="text" style="width: 600px; padding-left: 2%;">
+      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Donations are a Charitable Transaction</h5>
+      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather'; font-size: 14px;">
+        When giving their money to charity donors want to rest assured that it is not lining the pockets of executives and is being used for its intended purpose. 
+        While not as important, many donors expect the specific impact of their donation to be communicated as well as maintaining ongoing communication with the NPO so that donors can trust that the NPO is working towards their overall mission.
+      </p>
+    </div>
+  </div>
+  <hr style="border-top: 8px solid #bbb; border-radius: 5px;width: 1000px; margin: auto;">
+  <!--Recommendation 3-->
+  <div class="container" style="padding-top: 100px; width: 900px; align-items: center;">
+    <h5 style="text-align: center; background-color: #78bbfa; border-radius: 30px; padding: 20px; color:#000000; font-family: 'Instrument Serif';font-size: 20px;">
+      <img src="assets/individual icons/3.svg">
+      Donors are looking for more streamlined ways to donate to the causes they care about.
     </h5>
   </div>
   <!--Streamlined Donations Stats-->
@@ -347,9 +380,6 @@
       <h6 style="font-family: 'Grand Hotel'; font-size: 20px;">use payment processing apps such </br>as Zelle and Venmo</h6>
     </div>
     <div class="text" style="width: 300px;">
-      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
-        This is a text blurb that is going to explain the graphic on the left
-      </p>
     </div>
   </div>
   <div class="container" style="display: flex; align-items: center; justify-content: center;padding-top: 40px;">
@@ -359,6 +389,7 @@
       <h6 style="font-family: 'Grand Hotel'; font-size: 20px;">give via a nonprofit's website</h6>
     </div>
     <div class="text" style="width: 300px;">
+      <h5 style="text-align: center; font-family: 'Grand Hotel'; font-size: 24px;">Donations are a Charitable Transaction</h5>
       <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
         This is a text blurb that is going to explain the graphic on the left
       </p>
@@ -371,9 +402,6 @@
       <h6 style="font-family: 'Grand Hotel'; font-size: 20px;">use digital tools such as GoFundMe </br>and other crowdfunding platforms</h6>
     </div>
     <div class="text" style="width: 300px;">
-      <p style="text-align: center; background-color: #FF8C52; border-radius: 30px; padding: 20px; color: #000000; font-family: 'Merriweather';">
-        This is a text blurb that is going to explain the graphic on the left
-      </p>
     </div>
   </div>
   <!--Final Thoughts-->
@@ -383,8 +411,9 @@
         <div class="text" style="padding-top: 40px;">
           <h3 style="text-align:left;padding-left: 100px; font-family: 'Instrument Serif';font-size: 40px;">Reignite: A Non-Profit for All Non-Profits</h3>
         </div>
-        <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather';">
-          This is going to close out the webstite and discuss a bit about the app.
+        <h6 style="text-align:left;padding-left: 100px; font-family: 'Merriweather'; width: 900px;">
+          Reignite is the newest application on the market designed to break down the barriers that donors face and connect donors to new and old non-profit organizations. 
+          It creates a personalized experience for its users and links to varying NPO’s websites so that donors may find more information and donate directly to the NPOs that they love.
         </h6>
       </div>
       <div style="width: 150px;"></div>
