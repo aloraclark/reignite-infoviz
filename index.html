@@ -56,37 +56,30 @@
   </style>
 </head>
 <body>
-  <div class="container-fluid" style="height: 500px;">
+  <div class="container-fluid" style="height: 800px;">
     <!--Header-->
     <div class="row">
-      <h1 style="text-align: center;padding-top: 20px;font-family: 'Instrument Serif';font-size: 48px;">In the past 6 months how many times do you think the average person has donated to a Non Profit Organization (NPO)?</h1>
-      <div class="row" style="margin-left: 5%; padding-right: 0%;">
-        <div class="col-5" style="width: 400px;">
-          <img src="assets/individual icons/donation box.svg" style="width: 200px;">
-        </div>
-        <div class="col-3" style="width: 300px;">
-          <div class="row justify-content center">
-            <div class="input-group mb-3" style="text-align: center; width: 300px;"> 
-              <input id="question-1" type="number" class="form-control" placeholder="Please Enter a Number" aria-label="Please Enter a Number" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-dark" type="button" onclick="respondToUser()">Enter</button>
-              </div>
-            </div> 
-            <p id="response" style="text-align: center;"></p>
-            <script src="scripts/answer-script.js"></script>
-          </div>
-          <div class="row" style="text-align: center;padding-top: 30px;">
-            <div class="bounce">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="col-5" style="width: 400px;text-align: end;">
-          <img src="assets/individual icons/donation box.svg" style="width: 200px;">
+      <h1 style="text-align: center;padding-top: 20px;font-family: 'Instrument Serif';font-size: 48px;">
+        In the past 6 months how many times do you think the average person has donated to a Non Profit Organization (NPO)?</br>
+        <img src="assets/individual icons/donation box.svg" style="width: 100px; padding-top: 20px;">
+      </h1>
+    </div>
+    <div class="row  justify-content-center" style="padding-top: 100px;">
+      <div class="input-group mb-3" style="text-align: center; width: 300px;"> 
+        <input id="question-1" type="number" class="form-control" placeholder="Please Enter a Number" aria-label="Please Enter a Number" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-dark" type="button" onclick="respondToUser()">Enter</button>
         </div>
       </div> 
+    </div>
+    <p id="response" style="text-align: center;"></p>
+    <script src="scripts/answer-script.js"></script>
+    <div class="row" style="text-align: center;padding-top: 100px;">
+      <div class="bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+        </svg>
+      </div>
     </div>
   </div>
   <!--Bar Chart-->
@@ -298,8 +291,8 @@
   <!--Word Cloud-->
   <div class="container" style="display: flex; align-items: center; justify-content: center;padding-top: 70px;">
     <div>
-      <img src="assets/who donors are/word cloud.png" style="margin-right: 100px; width: 600px; height: 300px;">
-      <p style="font-size: 9px; font-family: Merriweather; color: #848383; padding-top: 8px;">
+      <img src="assets/who donors are/big word cloud.jpg" style="margin-left: 60px;width: 362px;height: 437px;margin-right: 100px;">
+      <p style="font-size: 9px; font-family: Merriweather; color: #848383; padding-top: 8px;text-align: center;">
         *Data collected as a part of UC Berkeley MIMS capstone project
       </p>
     </div>
